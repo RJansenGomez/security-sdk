@@ -56,7 +56,7 @@ and want to share the same User information. i.e Rols, Username, etc..
 #### Component/Functional tests
  There is a feature with works with testsContainers/ test Redis Server. At the end a server.
     
-    LoginMock class: provides a few methods that "mocks" a login and returns a JWT. 
+    LoginMock class: provides a few methods that "mocks" a login and returns a JWT to be used in the Headers of the requests. 
     They can be overloaded to accept rols, or whatever.
     - mockLogin
     - mockLoginExpiredJWT
