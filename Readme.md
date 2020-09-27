@@ -36,7 +36,7 @@ and want to share the same User information. i.e Rols, Username, etc..
         UserLogin userLogged = repository.login(userLogin);
         wrapper.setLogin(userLogged.getSecurityUser());
         String jwt = encryptor.createJWT(userLogged.getSecurityUser());
-        filter.storeUserInCache(userLogged.getSecurityUser());
+        securityCache.storeUser(userLogged.getSecurityUser());
         return jwt;
     }
      ```
